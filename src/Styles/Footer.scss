@@ -1,0 +1,66 @@
+footer {
+    background-color: $secondary-color;
+    color: $white-color;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    a:hover {
+        color: #444;
+    }
+
+    .social-icons {
+        //text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .circle-icon {
+        padding: 8px 10px 8px 10px;
+        margin-right: 6px;
+        border-radius: 35%;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        transition: all 0.1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .circle-icon:hover {
+        background-color: $primary-color;
+    }
+
+    @media screen and (max-width: 991px) {
+        .footer-col {
+            text-align: center !important;
+        }
+    }
+
+    .social-link {
+        color: rgba(242, 242, 242, 0.897);
+    }
+
+    .social-link:hover {
+        color: $white-color;
+    }
+
+    .menu-title {
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    .menu-item {
+        color: $white-color;
+        transition: all 0.1s ease-in-out;
+        
+        a {
+            color: $white-color !important;
+            cursor: pointer;
+        }
+
+        :hover {
+            font-weight: bold;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+}

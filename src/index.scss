@@ -1,0 +1,83 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./Fonts/catamaran/styles.css";
+@import "../node_modules/mouse-follower/src/scss/index.scss";
+
+/* Colors */
+$primary-color: #c55050; // I colori magari un contrasto tra azzurro e grigio scuro / chiaro!!
+$secondary-color: #e18351;
+
+$black-color: #383535;
+$white-color: #eeeded;
+
+.primary-color { color: $primary-color; }
+.secondary-color { color: $secondary-color; }
+.white-color { color: $white-color; }
+.black-color { color: $black-color; }
+.primary-bg-color { background-color: $primary-color; }
+.secondary-bg-color { background-color: $secondary-color; }
+
+/* Main styles and typography */
+body {
+  margin: 0px;
+  padding: 0px;
+  color: $black-color;
+  background-color: $white-color;
+  font-family: 'Catamaran', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mf-cursor { 
+  color: $primary-color; 
+
+  @media screen and (max-width: 769px) {
+    display: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold !important;
+}
+
+h1 { font-size: 4rem; }
+
+span,
+p {
+  font-weight: normal;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $secondary-color;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 991px) {
+    .desktop { display: none !important; }
+    .mobile { display: block !important; }    
+}
+
+@media screen and (min-width: 992px) {
+    .desktop { display: block !important; }
+    .mobile { display: none !important; }
+}
+
+@import './Styles/Hero.scss';
+@import './Styles/About.scss';
+@import './Styles/Details.scss';
+@import './Styles/Button.scss';
+@import './Styles/Footer.scss';
+@import './Styles/Contact.scss';
